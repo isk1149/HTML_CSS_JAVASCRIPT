@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    onclick
+    <button onclick="myFunction();">클릭</button>
+
+    <br />
+    addEventListener1
+    <button id="btn">클릭</button>
+
+    <br />
+    addEventListener2
+    <button id="btn2">클릭</button>
+
+    <br />
+    onchange
+    <select id="select1" onchange="doChange();">
+      <option value="KO">Korea</option>
+      <option value="CN">China</option>
+      <option value="JP">Japan</option>
+    </select>
+
+    <br />
+    onfocus
+    <input type="text" id="text1" onfocus="doFocus();" />
+
+    <br />
+    onblur
+    <input type="text" id="blur1" onblur="doBlur(this)" />
+
+    <br />
+    onkey-휴대폰
+    <input
+      type="number"
+      id="key1"
+      onkeydown="myOnKeyDown(event);"
+      onkeypress="myOnKeyPress(event);"
+      onkeyup="myOnKeyUp(event, 'key2', 3);"
+      maxlength="3"
+    />
+    <input
+      type="number"
+      id="key2"
+      onkeydown="myOnKeyDown(event);"
+      onkeypress="myOnKeyPress(event);"
+      onkeyup="myOnKeyUp(event, 'key3', 4);"
+      maxlength="4"
+    />
+    <input
+      type="number"
+      id="key3"
+      onkeydown="myOnKeyDown(event);"
+      onkeypress="myOnKeyPress(event);"
+      onkeyup="myOnKeyUp(event, null, 4);"
+      maxlength="4"
+    />
+    <button id="keybutton" onclick="myEnter()">조회</button>
+
+    <!--overflow-y: auto는 콘텐츠의 높이가 요소의 크기보다 커지면 세로 스크롤바를 자동으로 표시하고
+        콘텐츠가 요소 안에 다 들어가면 스크롤바를 숨긴다.
+        즉, 필요할 때만 스크롤바를 표시하는 기능이다.
+    -->
+    <div style="height: 100px; overflow-y: auto" onscroll="myScroll(event)">
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+      <p>Paragraph</p>
+    </div>
+
+    
+
+    <script src="./8.4.js"></script>
+  </body>
+</html>
