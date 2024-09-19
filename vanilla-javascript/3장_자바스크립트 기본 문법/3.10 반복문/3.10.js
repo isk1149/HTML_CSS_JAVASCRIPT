@@ -52,3 +52,16 @@ for (const idx in productList) {
   console.log(productList[idx]);
   console.log(productList[idx].name);
 }
+console.log("---------------------------------------------");
+
+//for-of문
+//Array, Map, String 등 iterable(반복 가능한) 객체에서 사용 가능한 반복문이다.
+for (const brand of brands) {
+  console.log(brand); //각 요소가 바로 추출됨. 애플, 구글, 페이스북, 아마존, 삼성전자
+}
+console.log("---------------------------------------------");
+let language = "javascript";
+for (const x of language) {
+  console.log(x);
+}
+console.log("---------------------------------------------");
