@@ -1,3 +1,4 @@
+//this에 Object 객체가 바인됭 된 경우
 let person = {
   firstName: "John",
   lastName: "Doe",
@@ -7,4 +8,6 @@ let person = {
     return this.firstName + " " + this.lastName;
   },
 };
+console.log(person);
+console.log(person.firstName);
 console.log(person.fullName());

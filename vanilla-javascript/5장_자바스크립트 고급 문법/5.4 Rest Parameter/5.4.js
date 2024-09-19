@@ -13,3 +13,14 @@ function sum(...args) {
 console.log(sum(3, 2, 5, 7, 4, 23));
 console.log(sum(3, 7));
 console.log(sum(21, 17, 38));
+
+function minus(...args) {
+  let total = 0;
+  for (let x of args) {
+    total -= x;
+  }
+  return total;
+}
+console.log(minus(1, 2, 3, 4, 5));
+console.log(minus(10, 21));
+console.log(minus(...[6, 6, 6, 6, 6]));

@@ -18,3 +18,10 @@ function say2(message = "default") {
 }
 
 say2();
+console.log("-----------------------------------------------------");
+
+function say3(message = "message") {
+  console.log(message);
+}
+say3();
+say3("hello");

@@ -1,3 +1,4 @@
+//this에 window 객체가 바인딩 된 경우
 console.log(this); //script 태그 안에 선언된 this는 window 객체로 사용됨
 
 function myFunction() {
