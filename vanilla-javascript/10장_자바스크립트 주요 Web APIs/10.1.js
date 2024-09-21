@@ -12,6 +12,7 @@
 //2. 웹 사이트에서 사용자 테마, 개인화를 제공하는 경우 해당 정보 저장
 if (typeof Storage !== "undefined") {
   localStorage.setItem("title", "The Great");
+  localStorage.setItem("seq", 25);
 
   const users = [
     { id: 1, name: "Tom" },
@@ -24,11 +25,31 @@ if (typeof Storage !== "undefined") {
 //로컬스토리지에 저장된 데이터는 이렇게 개발자 도구로 확인이 가능하기 때문에 보안상 중요 데이터는 저장하면 안 된다.
 //로컬스토리지에 데이터가 저장되면, 같은 도메인 내의 다른 페이지에서도 저장된 데이터를 조회할 수 있다.
 if (typeof Storage !== "undefined") {
-  console.log(localStorage.getItem("title"));
-  console.log(JSON.parse(localStorage.getItem("users")));
+  console.log(
+    `localStorage.getItem("title"): ${localStorage.getItem("title")}`
+  );
+  console.log(`localStorage.getItem("seq"): ${localStorage.getItem("seq")}`);
+  console.log(
+    `typeof localStorage.getItem("seq"): ${typeof localStorage.getItem("seq")}`
+  );
+  console.log(
+    `typeof Number(localStorage.getItem("seq")): ${typeof Number(
+      localStorage.getItem("seq")
+    )}`
+  );
+  console.log(
+    `JSON.parse(localStorage.getItem("users")): ${JSON.parse(
+      localStorage.getItem("users")
+    )}`
+  );
+  console.log(
+    `typeof JSON.parse(localStorage.getItem("users"))[0].id: ${typeof JSON.parse(
+      localStorage.getItem("users")
+    )[0].id}`
+  );
   localStorage.removeItem("title");
 }
-
+console.log("--------------------------------------------");
 //세션스토리지
 //세션스토리지에 저장된 데이터는 브라우저 창(탭)을 닫는 순간 자동으로 삭제된다.
 //세션스토리지에는 1회성 데이터를 보관해서 사용하면 된다.
@@ -36,11 +57,11 @@ if (typeof Storage !== "undefined") {
 //1. 사용자 정보 중 세션을 유지하는 동안에만 참조할 데이터 저장
 //2. 화면 이동 시 전달해야 할 파라미터가 많은 경우 저장
 if (typeof Storage !== "undefined") {
-  sessionStorage.setItem("title", "The Great");
+  sessionStorage.setItem("title", "session storage test");
 
   const users = [
-    { id: 1, name: "Tom" },
-    { id: 2, name: "Sam" },
+    { id: 1, name: "Tom2" },
+    { id: 2, name: "Sam2" },
   ];
   sessionStorage.setItem("users", JSON.stringify(users));
 }
