@@ -36,12 +36,17 @@ function myFunction2() {
 }
 
 //Async/Await를 사용하면 간결하고, 가독성이 높은 코드를 구현할 수 있다.
-//비동기 함수를 호출할 때 함수 아에 await를 정의하면 비동기 함수가 실행되고,
+//비동기 함수를 호출할 때 함수 안에 await를 정의하면 비동기 함수가 실행되고,
 //서버로부터 응답을 받을 때까지 대기(await)한 후 결과를 받으면 실행되도록 한다.
 async function myFunction3() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts/1");
   const resJson = await res.json();
   console.log(resJson);
+  //한 줄로 만들면 await (await fetch("https://jsonplaceholder.typicode.com/posts/1")).json();
+  /**
+   * await fetch("https://jsonplaceholder.typecode.com/posts/1").json(); 이런 코드가 잘못된 이유는
+   * fetch()가 비동기 함수이기 때문에 fetch()의 결과인 Response 객체가 반환되기 전에 json() 함수가 실행될 수 있기 때문임.
+   */
 
   const res2 = await fetch("https://jsonplaceholder.typicode.com/posts/1", {
     method: "PUT",
