@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var x = 5;
+      var y = 6;
+      var z = x + y;
+      console.log(`z: ${z}`);
+
+      var x = 7;
+      z = x + y;
+      console.log(`z: ${z}`);
+      // var 선언자를 사용하면 동일한 변수명을 사용해도 에러가 나지 않는다.
+      // 하지만 기존 코드에서 동일한 이름으로 사용되던 변수에 할당된 값이 사라지므로, 예기치 못한 에러가 발생할 수 있다.
+      // ex. 외부 자바스크립트 라이브러리에서 var로 선언된 변수명을 확인 못하고 동일한 변수명을 만들어버릴 수도 있음
+
+      // let 선언자는 ES6에 추가된 선언자이다.
+      // let으로 변수를 선언하면 동일한 변수명을 갖는 변수를 재선언할 수 없다.
+      let a = 1;
+      let b = 2;
+      let c = a + b;
+      console.log(`c: ${c}`);
+
+      a = 4;
+      // let a = 5;
+      c = a + b;
+      console.log(`c: ${c}`);
+      let d; // 선언만 하고 초기화하지 않아도 에러는 안 남.
+
+      // const 선언자는 ES6에 추가된 선언자이다. const는 변화하지 않을 변수를 선언할 때 사용한다.(상수)
+      // const 선언자를 사용할 경우 선언 시점에 값을 할당한 후 같은 변수명으로 재선언뿐만 아니라
+      // 이미 선언된 변수의 값도 변경할 수 없다.
+      // 상수이기 때문에 초기화를 해야 에러가 안 난다.
+      const q = 5;
+      const w = 6;
+      const e = q + w;
+      console.log(`e: ${e}`);
+
+      q = 7;
+      // const q = 7;
+      // const r;
+      console.log(`q: ${q}`);
+      console.log(`r: ${r}`);
+
+      // const 선언자 사용 사례
+      // 프로그램 전반에 걸쳐 사용되는 날짜 포맷을 const로 선언
+      const DATE_FORMAT = "yyyy.mm.dd";
+      // 기억하기 힘든 값을 const로 선언
+      const COLOR_RED = "#ff0000";
+      const COLOR_BLACK = "#000000";
+      const COLOR_WHITE = "#ffffff";
+      // 색상, 날짜 포맷처럼 하드 코딩된 상수 값을 할당할 때는 일반적으로 변수명을 대문자로 선언함
+    </script>
+  </body>
+</html>

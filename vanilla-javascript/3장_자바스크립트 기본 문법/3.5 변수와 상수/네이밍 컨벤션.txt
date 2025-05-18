@@ -1,0 +1,4 @@
+let userName = "";  // 카멜 표기법 - 변수명, 함수명에 사용 권장
+let user_name = ""; // 스네이크 표기법
+let UserName = "";  // 파스칼 표기법 - 클래스명, 생성자명에 사용 권장
+let strUserName = "";  // 헝가리언 표기법

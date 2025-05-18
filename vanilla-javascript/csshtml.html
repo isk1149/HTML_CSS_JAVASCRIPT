@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ol > li {
+        color: red;
+      }
+      a:link {
+        color: green;
+      }
+      a:visited {
+        color: orange;
+      }
+      a:hover {
+        color: red;
+      }
+      a:active {
+        color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        자식1
+        <ol>
+          <li>
+            자손1
+            <ol>
+              <li>자손2</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>자식2</li>
+    </ul>
+    <p><a href="#">가상 클래스 링크</a></p>
+  </body>
+</html>

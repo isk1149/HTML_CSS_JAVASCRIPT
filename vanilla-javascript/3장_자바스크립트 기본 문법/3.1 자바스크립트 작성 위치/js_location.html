@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // head 태그에 자바스크립트를 작성할 때는 head 태그의 title 태그 밑에 script 태그를 추가하고 작성하면 된다.
+      document.write("자바스크립트 head에 위치<br>");
+      /* 중요 포인트 */
+      // 자바스크립트 코드를 head 태그 안에 작성하면 브라우저가 body 태그의 HTML 코드를 실행하기 전에 자바스크립트 코드를 먼저 해석한다.
+      // head 태그 안에 자바스크립트 코드가 많다면, 브라우저는 자바스크립트를 모두 해석한 이후에 HTML 코드를 실행하기 때문에
+      // 사용자에게 보이는 웹페이지는 그만큼 느려질 수 있다.
+    </script>
+    <script src="./js_location.js"></script>
+  </head>
+  <body>
+    <!-- HTML 코드가 작성되는 곳 -->
+    <script>
+      // body 태그에 자바스크립트 코드를 작성할 때는 body 태그 제일 하단의 script 태그를 추가하고 작성한다.
+      document.write("자바스크립트 body에 위치<br>");
+      // body 태그에 있는 HTML 코드가 모두 실행되어 사용자가 보고 있는 브라우저 화면에 나타난 후 자바스크립트 코드를 실행함으로써
+      // 사용자가 느끼는 페이지의 로딩 속도를 높일 수 있다.
+
+      // 정리하면 HTML 코드를 실행시키기 위해 반드시 먼저 작성되어야 하는 자바스크립트 코드를 제외하고는
+      // body 태그 제일 하단에 자바스크립트 코드를 작성하는 것이 좋다.
+    </script>
+    <script src="./js_location.js"></script>
+  </body>
+</html>

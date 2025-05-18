@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercise HTML</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/star.png" alt="logo" />
+      <h1>책밥</h1>
+    </header>
+    <nav>
+      <a href="#">책밥의신간</a>
+      <a href="#">첫 번째</a>
+      <a href="#">1일#하루</a>
+      <a href="#">취미실용</a>
+    </nav>
+    <section>
+      <h2>마음을 채우는 한 끼 도서출판 책밥</h2>
+      <p style="color: gray">
+        반복되는 일상에 지친 당신에게 새로운 에너지를 공급하는 책을
+        만들겠습니다. 정성껏 준비한 한끼로 독자 여러분의 마음을 든든하게 채워
+        드립니다.
+      </p>
+      <h1>회원 가입</h1>
+      <form action="/submit" method="post">
+        <div>
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">이메일:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="gender">성별:</label>
+          <select id="gender" name="gender">
+            <option value="male">남성</option>
+            <option value="female">여성</option>
+            <option value="other">기타</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">제출</button>
+        </div>
+      </form>
+      <div class="box-model radius1">
+        <h2>마음을 채우는 한끼 도서출판 책밥</h2>
+        <p>
+          반복되는 일상에 지친 당신에게 새로운 에너지를 공급하는 책을
+          만들겠습니다.
+        </p>
+      </div>
+    </section>
+    <article>
+      <h3>'책밥'으로 맛있게 읽는 즐거움을 느껴보세요!</h3>
+      <p class="text-style" style="color: gray">
+        반복되는 일상에 지친 당신에게 새로운 에너지를 공급하는 책을
+        만들겠습니다. 정성껏 준비한 한 끼로 독자 여러분의 마음을 든든하게 채워
+        드립니다. 책밥의 출간 도서 목록입니다.앞으로 다양한 책이 출간될
+        예정입니다. 많은 기대 부탁 드립니다. 밥 없이 잘살아갈 수 있는 사람은
+        없습니다.
+      </p>
+      <div class="div1">
+        <p>
+          <img src="images/star2.png" alt="image" />반복되는 일상에 지친
+          당신에게 새로운 에너지를 공급하는 책을 만들겠습니다. 정성껏 준비한 한
+          끼로 독자 여러분의 마음을 든든하게 채워 드립니다. 책밥의 출간 도서
+          목록입니다.앞으로 다양한 책이 출간될 예정입니다. 많은 기대 부탁
+          드립니다. 밥 없이 잘살아갈 수 있는 사람은 없습니다.
+        </p>
+      </div>
+      <div style="clear: both"></div>
+      <div class="div-a"></div>
+      <div class="div-b"></div>
+      <div class="div-c"></div>
+    </article>
+    <footer>
+      <p>Copyright by &copy;책밥 All rights reserved</p>
+    </footer>
+  </body>
+</html>

@@ -36,3 +36,20 @@ let [firstName, lastName, [color1, color2, color3]] = getProfile();
 console.log(color1);
 console.log(color2);
 console.log(color3);
+
+function getScores2() {
+  return [1, 2, 3, 4];
+}
+
+let [p, o, i, u] = getScores2();
+let [l, m, ...n] = getScores2();
+console.log(l);
+console.log(m);
+console.log(n);
+
+function getProfiles() {
+  return ["john", "doe", ["red", "blue", "green"]];
+}
+
+let [aa, bb, [cc, dd, ee]] = getProfiles();
+console.log(cc);

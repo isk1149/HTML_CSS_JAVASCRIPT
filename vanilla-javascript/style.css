@@ -1,0 +1,75 @@
+h1 {
+  color: orange;
+}
+h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: underline #ff0000 dotted;
+}
+h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(0, 0, 255);
+}
+p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+}
+footer {
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-style {
+  text-indent: 5%;
+  letter-spacing: -3px;
+  word-spacing: 1em;
+  line-height: 1.2;
+}
+.box-model {
+  width: 600px;
+  border: 1px solid #000000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.radius1 {
+  border-radius: 10px;
+}
+
+.div1 {
+  border: 1px solid #9b9b9b;
+  width: 400px;
+  height: 100px;
+  overflow: auto;
+}
+
+img {
+  float: left;
+  margin: 10px;
+}
+
+.div-a {
+  border: 5px solid #ff0000;
+  width: 100px;
+  height: 100px;
+}
+
+.div-b {
+  border: 5px solid #00ff00;
+  width: 100px;
+  height: 100px;
+}
+
+.div-c {
+  border: 5px solid #0000ff;
+  width: 100px;
+  height: 100px;
+}

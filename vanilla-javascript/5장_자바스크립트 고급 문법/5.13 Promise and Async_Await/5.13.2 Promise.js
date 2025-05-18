@@ -11,7 +11,7 @@
 
 //Promise는 new 생성자 함수를 사용해 생성한다
 //요청에 대한 응답이 성공적으로 오면, resolve() 함수에 결과를 전달한다.
-//요청에 대한 응답에 실패하면 reject() 함수에 에러를 전달한다.
+//요청에 대한 응답에 실패하면 reject() 함수에 에러를 전달한다.1
 
 // const promise = new Promise((resolve, reject) => {
 //   if (/*처리성공*/) {

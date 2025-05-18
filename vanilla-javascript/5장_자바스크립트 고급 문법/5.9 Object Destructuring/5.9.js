@@ -10,11 +10,26 @@ function getPerson() {
   };
 }
 
+function getPerson2() {
+  return {
+    firstName: "john",
+    lastName: "doe",
+    age: 32,
+    email: "john@gmail.com",
+    city: "seoul",
+    country: "korea",
+  };
+}
+
 //★★★★★
 //사용하려는 데이터가 저장되어 있는 키 이름만 정의하면 Object에서 해당 키를 갖는 값을 바로 추출해서 사용 가능
 let { firstName, lastName } = getPerson();
 console.log(firstName);
 console.log(lastName);
+
+let { age, email } = getPerson2();
+console.log(age);
+console.log(email);
 
 //★★★★★
 //전달받은 Object 데이터에서 필요한 데이터의 키만 정의해서 사용
@@ -22,6 +37,12 @@ function displayFullName({ firstName, lastName }) {
   console.log(`${firstName} ${lastName}`);
 }
 
+const displayFullName2 = ({ age, email }) => {
+  console.log(`${age} ${email}`);
+};
+
 //★★★★★
 //함수 호출 시 Object를 파라미터 값으로 전달
 displayFullName(getPerson());
+
+displayFullName2(getPerson2());
