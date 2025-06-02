@@ -1,11 +1,18 @@
 /*
-자바스크립트는 다음과 같은 6가지 기본 자료형 데이터 타입이 있다.
-String 문자열
-Number 숫자
-Boolean 참/거짓
-Undefined
-Null
-Symbol
+| 자료형       | 설명                  | 예시                                | typeof 결과                    |
+| ------------| -----------          | ---------------------------------   | ----------------------------- |
+| number      | 숫자 (정수, 실수)      | 42, 3.14, NaN, Infinity             | "number"                      |
+| string      | 문자열                | "hello", 'a'                        | "string"                      |
+| boolean     | 논리값                | true, false                         | "boolean"                     |
+| undefined   | 값이 할당되지 않음      | let a; → a                          | "undefined"                   |
+| null        | 명시적인 "없음"        | let a = null                        | "object"(자바스크립트의 버그로 인해) |
+| symbol      | 고유한 식별자          | Symbol("id")                        | "symbol"                      |
+| bigint      | 아주 큰 정수           | 123456789012345678901234567890n     | "bigint"                      |
+| object      | 참조형 데이터, 배열·객체 | {}, [], null                        | "object"                      |
+| function    | 함수(object의 특수 형태)| function() {}                       | "function"                    |
+typeof null === "object": 자바스크립트 초기 구현 오류이지만 호환성 때문에 유지됨.
+배열은 typeof로는 "object"로 나오므로 배열인지 여부는 Array.isArray()로 확인해야 함.
+함수는 내부적으로 객체지만 typeof는 "function"으로 따로 구분됨.
 */
 
 // 1. String
