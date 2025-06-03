@@ -7,7 +7,7 @@ const person = {
   age: 50,
   blackEyeColor: true,
 };
-
+console.log(person); // 이렇게 객체를 바로 콘솔에 찍으면 json 형태로 나옴
 console.log(`person: ${person}`);
 console.log("person: " + person);
 console.log(`person.toString(): ${person.toString()}`);
