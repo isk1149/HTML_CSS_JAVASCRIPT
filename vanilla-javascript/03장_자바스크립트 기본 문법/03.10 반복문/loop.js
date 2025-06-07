@@ -1,3 +1,9 @@
+/* for-loop
+  for (statement 1; statement 2; statement 3) {
+    // 코드
+  }
+*/
+
 let brands = ["애플", "구글", "페이스북", "아마존", "삼성전자"];
 let productList = [
   {
@@ -38,8 +44,9 @@ let person = {
 //for-in문은 객체 내에 정의된 키 값의 수만큼 코드 블록을 수행한다.
 //for-in문은 배열에 등록된 데이터 수만큼 반복문을 실행한다.
 for (const key in person) {
+  // ***
   console.log(`key: ${key}`); //fname, lname, age
-  console.log(`person[key]: ${person[key]}`); //john, doe, 25
+  console.log(`person[${key}]: ${person[key]}`); //john, doe, 25
 }
 console.log("---------------------------------------------");
 for (const idx in brands) {
@@ -65,3 +72,13 @@ for (const x of language) {
   console.log(x);
 }
 console.log("---------------------------------------------");
+
+/* while
+  while (condition) {
+    // 코드
+  }
+
+  do {
+    // 코드
+  } while (condition);
+*/
