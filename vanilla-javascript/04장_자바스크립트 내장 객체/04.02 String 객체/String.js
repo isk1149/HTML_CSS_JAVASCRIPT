@@ -36,16 +36,25 @@ console.log("========================================");
 console.log("");
 //indexOf(), lastIndexOf() 함수 모두 두 번째 파라미터에 문자열을 찾기 시작할 위치를 index로 설저 가능
 pos = str.indexOf("locate", 20); //21
+console.log(pos);
 pos = str.indexOf("locate", 21); //21
+console.log(pos);
 pos = str.indexOf("locate", 22); //-1
+console.log(pos);
 
 //lastIndexOf()의 경우 뒤에서부터 찾는다
 pos = str.lastIndexOf("locate", 27); //21
+console.log(pos);
 pos = str.lastIndexOf("locate", 19); //7
+console.log(pos);
 pos = str.lastIndexOf("locate", 11); //7
+console.log(pos);
 pos = str.lastIndexOf("locate", 7); //7
+console.log(pos);
 pos = str.lastIndexOf("locate", 6); //-1
-
+console.log(pos);
+console.log("========================================");
+console.log("");
 //slice()
 //파라미터로 시작 위치와 종료 위치를 주면, 문자열에서 해당 부분을 잘라내서 반환
 //종료위치 이전까지만 반환됌. 위치는 0부터 세면 됌
@@ -99,9 +108,9 @@ console.log(`str.replace("Seoul", "Jeju"): ${str.replace("Seoul", "Jeju")}`);
 console.log(`str.replace("SEOUL", "Jeju"): ${str.replace("SEOUL", "Jeju")}`);
 
 //대소문자 구분 없이 사용하려면 자바스크릡트 정규식을 사용한다
-console.log(`str.replace(/SEOUL/i, "Jeju"): ${str.replace(/SEOUL/i, "Jeju")}`);
+console.log(`str.replace(/SEOUL/i, "Jeju"): ${str.replace(/SEOUL/i, "Jeju")}`); // i: 대소문자 구분 없이 일치
 console.log(
-  `str.replace("/Seoul/g", "Jeju"): ${str.replace(/Seoul/g, "Jeju")}`
+  `str.replace("/Seoul/g", "Jeju"): ${str.replace(/Seoul/g, "Jeju")}` // g: 모든 일치 항목을 찾음 (하나가 아닌 전부)
 );
 console.log("========================================");
 console.log("");
@@ -172,6 +181,8 @@ console.log("");
  */
 //문자열 내의 특정 구분자를 기준으로 문자열을 분리해서 배열로 반환
 console.log(`"1997-12-02".split("-"): ${"1997-12-02".split("-")}`);
+// 템플릿 리터럴 내부 ${} 안에 배열이 들어가면 → 자동으로 문자열로 변환됨
+// (Array.prototype.toString() 호출)
 console.log("배열반환함");
 console.log(
   `typeof "1997-12-02".split("-"): ${typeof "1997-12-02".split("-")}`
